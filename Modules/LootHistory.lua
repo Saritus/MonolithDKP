@@ -218,6 +218,11 @@ function MonDKP:LootHistory_Reset()
 	end
 end
 
+local function GetItemID(loot)
+	local Hitem, itemID = strsplit(":", loot)
+	return itemID
+end
+
 local LootHistTimer = LootHistTimer or CreateFrame("StatusBar", nil, UIParent)
 function MonDKP:LootHistory_Update(filter)				-- if "filter" is included in call, runs set assigned for when a filter is selected in dropdown.
 	if not MonDKP.UIConfig:IsShown() then return end
@@ -278,6 +283,7 @@ function MonDKP:LootHistory_Update(filter)				-- if "filter" is included in call
 			local i = j
 			processing = true
 		  	local itemToLink = LootTable[i]["loot"]
+			local itemID = GetItemID(itemToLink);
 			local del_search = MonDKP:Table_Search(MonDKP_Loot, LootTable[i].deletes, "index")
 
 		  	if filter == L["DELETEDENTRY"] then
@@ -434,7 +440,7 @@ function MonDKP:LootHistory_Update(filter)				-- if "filter" is included in call
 		    		end
 		    	end
 		    	for j=1, #MonDKP_Loot do
-		    		if MonDKP_Loot[j]["loot"] == itemToLink and LootTable[i].date ~= MonDKP_Loot[j].date and not MonDKP_Loot[j].deletedby and not MonDKP_Loot[j].deletes then
+		    		if GetItemID(MonDKP_Loot[j]["loot"]) == itemID and LootTable[i].date ~= MonDKP_Loot[j].date and not MonDKP_Loot[j].deletedby and not MonDKP_Loot[j].deletes then
 		    			local col;
 		    			local s = MonDKP:Table_Search(MonDKP_DKPTable, MonDKP_Loot[j].player)
 		    			if s then
