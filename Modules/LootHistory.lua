@@ -440,7 +440,7 @@ function MonDKP:LootHistory_Update(filter)				-- if "filter" is included in call
 		    		end
 		    	end
 		    	for j=1, #MonDKP_Loot do
-		    		if MonDKP_Loot[j]["loot"] == itemToLink and LootTable[i].date ~= MonDKP_Loot[j].date and not MonDKP_Loot[j].deletedby and not MonDKP_Loot[j].deletes then
+		    		if GetItemID(MonDKP_Loot[j]["loot"]) == itemID and LootTable[i].date ~= MonDKP_Loot[j].date and not MonDKP_Loot[j].deletedby and not MonDKP_Loot[j].deletes then
 		    			local col;
 		    			local s = MonDKP:Table_Search(MonDKP_DKPTable, MonDKP_Loot[j].player)
 		    			if s then
