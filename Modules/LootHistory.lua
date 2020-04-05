@@ -283,6 +283,7 @@ function MonDKP:LootHistory_Update(filter)				-- if "filter" is included in call
 			local i = j
 			processing = true
 		  	local itemToLink = LootTable[i]["loot"]
+			local itemID = GetItemID(itemToLink);
 			local del_search = MonDKP:Table_Search(MonDKP_Loot, LootTable[i].deletes, "index")
 
 		  	if filter == L["DELETEDENTRY"] then
