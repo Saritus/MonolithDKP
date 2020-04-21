@@ -31,7 +31,7 @@ MonDKP.Commands = {
         StaticPopup_Show ("SUGGEST_RELOAD")
       end
     else
-      MonDKP:Print("Essential DKP has not completed initialization.")
+      MonDKP:Print("Monolith DKP has not completed initialization.")
     end
   end,
   ["reset"] = MonDKP.ResetPosition,
@@ -52,7 +52,7 @@ MonDKP.Commands = {
       end
       MonDKP:BidInterface_Toggle()
     else
-      MonDKP:Print("Essential DKP has not completed initialization.")
+      MonDKP:Print("Monolith DKP has not completed initialization.")
     end 
   end,
   ["repairtables"] = function(...)       -- test new features
@@ -107,7 +107,7 @@ MonDKP.Commands = {
         MonDKP:Print(L["NOPERMISSION"])
       end
     else
-      MonDKP:Print("Essential DKP has not completed initialization.")
+      MonDKP:Print("Monolith DKP has not completed initialization.")
     end
   end,
   ["help"] = function()
@@ -258,7 +258,7 @@ function MonDKP_OnEvent(self, event, arg1, ...)
 				MonDKP:SortDKPHistoryTable()
 				MonDKP:Print(L["VERSION"].." "..core.MonVersion..", Maintained by Danteril-MirageRaceway | Fork of MonolithDKP created by Roeshambo@Stalagg-PvP");
 				MonDKP:Print(L["LOADED"].." "..#MonDKP_DKPTable.." "..L["PLAYERRECORDS"]..", "..#MonDKP_Loot.." "..L["LOOTHISTRECORDS"].." "..#MonDKP_DKPHistory.." "..L["DKPHISTRECORDS"]..".");
-				MonDKP:Print(L["USE"].." /dkp ? "..L["SUBMITBUGS"].." @ https://github.com/lantisnt/EssentialDKP/issues");
+				MonDKP:Print(L["USE"].." /dkp ? "..L["SUBMITBUGS"].." @ https://github.com/lantisnt/MonolithDKP/issues");
 				MonDKP.Sync:SendData("MonDKPBuild", tostring(core.BuildNumber)) -- broadcasts build number to guild to check if a newer version is available
 
 				if not MonDKP_DB.defaults.installed210 then
@@ -442,7 +442,7 @@ function MonDKP_OnEvent(self, event, arg1, ...)
 end
 
 function MonDKP:OnInitialize(event, name)		-- This is the FIRST function to run on load triggered registered events at bottom of file
-	if (name ~= "EssentialDKP") then return end 
+	if (name ~= "MonolithDKP") then return end 
 
 	-- allows using left and right buttons to move through chat 'edit' box
 	--[[for i = 1, NUM_CHAT_WINDOWS do
