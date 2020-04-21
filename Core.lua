@@ -16,7 +16,7 @@ local tc_colors = {
 	["Mage"] = { r = 0.25, g = 0.78, b = 0.92, hex = "40C7EB" },
 	["Priest"] = { r = 1, g = 1, b = 1, hex = "FFFFFF" },
 	["Rogue"] = { r = 1, g = 0.96, b = 0.41, hex = "FFF569" },
-	["Shaman"] = { r = 0.96, g = 0.55, b = 0.73, hex = "F58CBA" },
+	["Shaman"] = { r = 0.01, g = 0.44, b = 0.87, hex = "0270DD" },
 	["Paladin"] = { r = 0.96, g = 0.55, b = 0.73, hex = "F58CBA" },
 	["Warlock"] = { r = 0.53, g = 0.53, b = 0.93, hex = "8787ED" },
 	["Warrior"] = { r = 0.78, g = 0.61, b = 0.43, hex = "C79C6E" }
@@ -46,8 +46,8 @@ end
 -- Addon Defaults
 --------------------------------------
 local defaults = {
-	theme = { r = 0.6823, g = 0.6823, b = 0.8666, hex = "aeaedd" },
-	theme2 = { r = 1, g = 0.37, b = 0.37, hex = "ff6060" }
+	theme = { r = 0.4, g = 0.8, b = 0.4, hex = "65c6ba" },
+	theme2 = { r = 0.8, g = 0.8, b = 0.8, hex = "9bb5bd" }
 }
 
 core.WorkingTable = {};       -- table of all entries from MonDKP_DKPTable that are currently visible in the window. From MonDKP_DKPTable
@@ -88,8 +88,8 @@ core.EncounterList = {      -- Event IDs must be in the exact same order as core
 }
 
 core.MonDKPUI = {}        -- global storing entire Configuration UI to hide/show UI
-core.MonVersion = "v2.1.2";
-core.BuildNumber = 20102;
+core.MonVersion = "vE.1.3";
+core.BuildNumber = 140103;
 core.TableWidth, core.TableRowHeight, core.TableNumRows = 500, 18, 27; -- width, row height, number of rows
 core.SelectedData = { player="none"};         -- stores data of clicked row for manipulation.
 core.classFiltered = {};   -- tracks classes filtered out with checkboxes
@@ -134,7 +134,7 @@ function MonDKP:ResetPosition()
 	MonDKP.UIConfig:SetPoint("CENTER", UIParent, "CENTER", -250, 100);
 	MonDKP.UIConfig:SetSize(550, 590);
 	MonDKP.UIConfig.TabMenu:Hide()
-	MonDKP.UIConfig.expandtab:SetTexture("Interface\\AddOns\\MonolithDKP\\Media\\Textures\\expand-arrow");
+	MonDKP.UIConfig.expandtab:SetTexture("Interface\\AddOns\\EssentialDKP\\Media\\Textures\\expand-arrow");
 	core.ShowState = false;
 	MonDKP.BidTimer:ClearAllPoints()
 	MonDKP.BidTimer:SetPoint("CENTER", UIParent)
@@ -325,10 +325,10 @@ function MonDKP:FormatTime(time)
 	return str;
 end
 
-function MonDKP:Print(...)        --print function to add "MonolithDKP:" to the beginning of print() outputs.
+function MonDKP:Print(...)        --print function to add "EsentialDKP:" to the beginning of print() outputs.
 	if not MonDKP_DB.defaults.supressNotifications then
 		local defaults = MonDKP:GetThemeColor();
-		local prefix = string.format("|cff%s%s|r|cff%s", defaults[1].hex:upper(), "MonolithDKP:", defaults[2].hex:upper());
+		local prefix = string.format("|cff%s%s|r|cff%s", defaults[1].hex:upper(), "EssentialDKP:", defaults[2].hex:upper());
 		local suffix = "|r";
 
 		for i = 1, NUM_CHAT_WINDOWS do
@@ -367,7 +367,7 @@ end
 function MonDKP:CreateContainer(parent, name, header)
 	local f = CreateFrame("Frame", "MonDKP"..name, parent);
 	f:SetBackdrop( {
-		edgeFile = "Interface\\AddOns\\MonolithDKP\\Media\\Textures\\edgefile.tga", tile = true, tileSize = 1, edgeSize = 2,  
+		edgeFile = "Interface\\AddOns\\EssentialDKP\\Media\\Textures\\edgefile.tga", tile = true, tileSize = 1, edgeSize = 2,  
 		insets = { left = 0, right = 0, top = 0, bottom = 0 }
 	});
 	f:SetBackdropColor(0,0,0,0.9);
@@ -503,7 +503,7 @@ function MonDKP:StatusVerify_Update()
 		end
 
 		if not core.OOD then
-			MonDKP.DKPTable.SeedVerifyIcon:SetTexture("Interface\\AddOns\\MonolithDKP\\Media\\Textures\\up-to-date")
+			MonDKP.DKPTable.SeedVerifyIcon:SetTexture("Interface\\AddOns\\EssentialDKP\\Media\\Textures\\up-to-date")
 			MonDKP.DKPTable.SeedVerify:SetScript("OnEnter", function(self)
 				GameTooltip:SetOwner(self, "ANCHOR_RIGHT", 0, 0);
 				GameTooltip:SetText(L["DKPSTATUS"], 0.25, 0.75, 0.90, 1, true);
@@ -520,7 +520,7 @@ function MonDKP:StatusVerify_Update()
 
 			return true;
 		else
-			MonDKP.DKPTable.SeedVerifyIcon:SetTexture("Interface\\AddOns\\MonolithDKP\\Media\\Textures\\out-of-date")
+			MonDKP.DKPTable.SeedVerifyIcon:SetTexture("Interface\\AddOns\\EssentialDKP\\Media\\Textures\\out-of-date")
 			MonDKP.DKPTable.SeedVerify:SetScript("OnEnter", function(self)
 				GameTooltip:SetOwner(self, "ANCHOR_RIGHT", 0, 0);
 				GameTooltip:SetText(L["DKPSTATUS"], 0.25, 0.75, 0.90, 1, true);

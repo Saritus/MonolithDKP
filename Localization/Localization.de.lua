@@ -434,7 +434,7 @@ if GetLocale() == "deDE" then
     MIGRATEINST1 = [=[|cffff0000WICHTIG!!|r: Sichern Sie Ihre gespeicherte Variablendatei, bevor Sie fortfahren. Mit 2.0 kommt ein brandneues indiziertes Broadcast-System. Dazu müssen Ihre aktuellen Tabellen mit neuen Werten migriert werden. Diese Migration ist ein einmaliger Vorgang, der NUR von EINEM Mitarbeiter durchgeführt werden kann. Wählen Sie den Officer mit den genauesten Daten aus, um die Migration durchzuführen. Alle anderen Offiziere werden gesperrt und ihre Daten werden gelöscht, um eine Übertragung der neuen Daten von diesem ausgewählten Offizier zu akzeptieren. Dies dient dazu, doppelte Daten zu vermeiden. Sobald ALLE Offiziere die neuen Daten erhalten haben, können Sie das Tag {MonDKP = OFFICER_NAME} aus der öffentlichen Notiz der Gildenanführer löschen. Es ist äußerst wichtig, dass nur ein Mitarbeiter die Migration durchführt. Andernfalls werden doppelte Daten und beschädigte Tabellen angezeigt. (Um das Problem zu beheben, müssen sich nur alle Mitarbeiter abmelden, die beschädigte Tabellen haben, und ihre gespeicherten Variablendateien gleichzeitig löschen Sie erhalten die beschädigten Daten einfach wieder, sobald Sie sich anmelden. Darüber hinaus müssen alle Mitglieder 2.0 oder höher verwenden, um kompatibel zu sein. Ältere Versionen funktionieren NICHT.
 
     Dieses Fenster kann mit "/dkp migrate" erneut geöffnet werden.]=],
-    MIGRATEINST2 = "%s hat die Migration bereits durchgeführt. Bitte sichern Sie Ihre gespeicherte Variablendatei sofort (WTF\\Account\\ACCOUNT_NAME\\SavedVariables\\MonolithDKP.lua) und klicken Sie dann auf die Schaltfläche \"Tabellen löschen\". Wenn %s online ist, wird nach dem erneuten Laden automatisch eine Synchronisierung an Sie gesendet. Andernfalls wird einer bei der Anmeldung weitergeleitet, oder Sie können die Weiterleitung einer Synchronisierung anfordern (dies erfolgt durch Klicken auf die Schaltfläche für den Tabellenstatus in der unteren linken Ecke der Haupt-GUI). Wenn während des Migrationsprozesses für Ihre Gilde Fehler auftreten, löschen Sie das Tag für migrierende Offiziere aus der öffentlichen Notiz des Gildenleiters, und lassen Sie alle beteiligten Offiziere ihre beschädigte gespeicherte Variablendatei löschen und auf die gesicherte Datei zurücksetzen. Jeder muss dies zur gleichen Zeit tun und sich nicht anmelden (mit aktiviertem Addon), bis dies abgeschlossen ist. Jeder, der mit migrierten Tabellen online ist, übermittelt diese Daten automatisch an Sie, sobald Sie sich anmelden.",
+    MIGRATEINST2 = "%s hat die Migration bereits durchgeführt. Bitte sichern Sie Ihre gespeicherte Variablendatei sofort (WTF\\Account\\ACCOUNT_NAME\\SavedVariables\\EssentialDKP.lua) und klicken Sie dann auf die Schaltfläche \"Tabellen löschen\". Wenn %s online ist, wird nach dem erneuten Laden automatisch eine Synchronisierung an Sie gesendet. Andernfalls wird einer bei der Anmeldung weitergeleitet, oder Sie können die Weiterleitung einer Synchronisierung anfordern (dies erfolgt durch Klicken auf die Schaltfläche für den Tabellenstatus in der unteren linken Ecke der Haupt-GUI). Wenn während des Migrationsprozesses für Ihre Gilde Fehler auftreten, löschen Sie das Tag für migrierende Offiziere aus der öffentlichen Notiz des Gildenleiters, und lassen Sie alle beteiligten Offiziere ihre beschädigte gespeicherte Variablendatei löschen und auf die gesicherte Datei zurücksetzen. Jeder muss dies zur gleichen Zeit tun und sich nicht anmelden (mit aktiviertem Addon), bis dies abgeschlossen ist. Jeder, der mit migrierten Tabellen online ist, übermittelt diese Daten automatisch an Sie, sobald Sie sich anmelden.",
     MIN = "Mindest",
     MINBIDDESCRIPTION = [=[Bei Mindestgebotswerten wird allen Slots (oder einzelnen Artikeln) ein Mindestwert zugewiesen. Jeder, der ein Gebot abgibt, muss mit diesem oder einem höheren Wert bieten.
 
@@ -451,8 +451,8 @@ if GetLocale() == "deDE" then
     MINUTES = "Protokoll",
     MISCSETTINGS = "Verschiedene Einstellungen",
     MISSINGENT = "Dir fehlen ein, oder mehrere Einträge von den folgenden Offizieren",
-    MONDKPSCALESIZE = "Monolith DKP Scale Size",
-    MONDKPSCALESIZETTDESC = "Maßstab des Monolith DKP-Fensters. Klicken Sie auf \"Save Settings\" (Einstellungen speichern), um die Größe auf den eingestellten Wert zu ändern.",
+    MONDKPSCALESIZE = "Essential DKP Scale Size",
+    MONDKPSCALESIZETTDESC = "Maßstab des Essential DKP-Fensters. Klicken Sie auf \"Save Settings\" (Einstellungen speichern), um die Größe auf den eingestellten Wert zu ändern.",
     MONDKPSCALESIZETTWARN = "Möglicherweise ist ein / reload nach dem Speichern erforderlich, wenn ein anderes Addon verwendet wird, das die Skalierung der Benutzeroberfläche ändert (z. B. TukUI, ElvUI usw.).",
     MORE = "Mehr",
     MORESECONDSTO = "Weitere Sekunde (n), um das zu tun.",
@@ -533,7 +533,7 @@ if GetLocale() == "deDE" then
 
     Sind Sie sicher, dass Sie dies tun möchten?]=],
     OUTOFDATE = "veraltet",
-    OUTOFDATEANNOUNCE = "Ihre Version von Monolith DKP ist veraltet. Bitte aktualisieren Sie Curse / Twitch oder WoWInterface, um sicherzustellen, dass keine Kompatibilitätsprobleme vorliegen.",
+    OUTOFDATEANNOUNCE = "Ihre Version von Essential DKP ist veraltet. Bitte aktualisieren Sie Curse / Twitch, um sicherzustellen, dass keine Kompatibilitätsprobleme vorliegen.",
     OVERWRITETABLES = "Ein kompletter Broadcast wird die Daten aller Empfänger mit deinen überschreiben. Hat jemand neuere Einträge als du, gehen diese verloren. Wenn du nur Daten senden willst, die anderen fehlen, benutze die \"Merge Last 2 Weeks\" option. Fortfahren?",
     PAUSERAID = "Raid anhalten",
     PAUSERAIDTTDESC = "Dies unterbricht einen Raid-Timer, wenn der Anführer entscheidet, dass der Timer für Pausen angehalten werden soll.",
@@ -757,7 +757,7 @@ if GetLocale() == "deDE" then
     WHITELISTEMPTY = "Ihre Whitelist ist leer.",
     WHITELISTHEADER = [=[Whitelist-Einstellungen |CFF444444 (Nur Leader) (Alpha)|r
 
-    Es wird dringend empfohlen, diese Whitelist-Einstellung nur zu verwenden, wenn Sie einschränken möchten, für welche Officers Berechtigungen erforderlich sind. Wenn Sie möchten, dass alle Offiziere über Berechtigungen verfügen, ignorieren Sie diese Einstellungsfunktion vollständig. Mit Vorsicht verwenden. (Wenn das Anwenden dieser Einstellungen Probleme verursacht, öffnen Sie die Datei \WTF\Accounts\ACCOUNT_NAME\SavedVariables\MonolithDKP.lua mit einem Texteditor und löschen Sie die Tabelle MonDKP_Whitelist im unteren Bereich.)]=],
+    Es wird dringend empfohlen, diese Whitelist-Einstellung nur zu verwenden, wenn Sie einschränken möchten, für welche Officers Berechtigungen erforderlich sind. Wenn Sie möchten, dass alle Offiziere über Berechtigungen verfügen, ignorieren Sie diese Einstellungsfunktion vollständig. Mit Vorsicht verwenden. (Wenn das Anwenden dieser Einstellungen Probleme verursacht, öffnen Sie die Datei \WTF\Accounts\ACCOUNT_NAME\SavedVariables\EssentialDKP.lua mit einem Texteditor und löschen Sie die Tabelle MonDKP_Whitelist im unteren Bereich.)]=],
     WIPETABLES = "Tabellen löschen ",
     WIPETABLESCONF = "Möchten Sie wirklich alle Tabellen löschen? Sie können alle Informationen von einem Offizier abrufen, wenn einer online ist. ",
     WIPETABLESTTDESC = "Löscht alle Daten einschließlich DKP-Tabelle, Beuteverlauf und DKP-Verlauf. Verwenden Sie diese Option, wenn beim Synchronisieren Probleme auftreten, um neue und vollständige Informationen von einem verfügbaren Mitarbeiter zu erhalten. ",
@@ -783,14 +783,14 @@ if GetLocale() == "deDE" then
     ZONE = "Zone",
     PASS                  = "Passen",
 
-    CHANGELOG1            = "- Verbessertes Broadcast-System mit zugänglicher Schnittstelle durch Klicken auf das Statusanzeigesymbol in der unteren linken Ecke der DKP-Hauptschnittstelle.",
-    CHANGELOG2            = "  - Die Option \"Vollständige Übertragung\" überträgt alle Daten und überschreibt die Empfängertabellen mit identischen Kopien von Ihnen. Alle Daten, die sie hatten und die Sie nicht hatten, gehen verloren (Funktioniert genauso wie die Broadcast-Schaltfläche in 1.6 und früher).",
-    CHANGELOG3            = "  - Die Option \"Letzte 2 Wochen zusammenführen\" überträgt alle Einträge, die in den letzten zwei Wochen erstellt wurden (jedoch nicht früher als bei der Installation von 2.1, um die Möglichkeit der Datenverdoppelung zu vermeiden) und wendet nur Einträge an, die die Empfänger nicht haben. Nützlich zum Zusammenführen mehrerer Schlachtzugsdaten.",
-    CHANGELOG4            = "- Tischreparaturfunktion für Offiziere. Um es zu benutzen, schaue dir bitte das Video an, das auf der Curse-Seite verlinkt ist, oder gehe zu https://www.youtube.com/watch?v=dwnNnppFF2I. Es wird empfohlen, dass nur ein Offizier es auf Tabellen mit den genauesten Daten verwendet und dann eine vollständige Übertragung der reparierten Daten an den Rest der Gilde oder an die Offiziere durchführt, um sie weiterzugeben. Sichern Sie zuvor Ihre gespeicherten Variablendateien.",
-    CHANGELOG5            = "- Broadcasting-Einträge während des Raids werden weiterhin sofort gesendet, wie sie in 2.0 waren. Es wird nicht darauf gewartet, dass Einträge gesendet werden, weil Sie befürchten, Daten zu überschreiben.",
-    CHANGELOG6            = "- Der Samen, der feststellt, ob Ihre Tabellen veraltet sind, wird nun auf natürliche Weise innerhalb des Addons verbreitet (keine GM-Veröffentlichung mehr).",
-    CHANGELOG7            = "- Diese neue Datenstruktur ist nicht mit der aktuellen Datenverwaltung auf www.warcraftdkp.com kompatibel, bis der Entwickler dort die Logik aktualisieren kann.",
-    CHANGELOG8            = "- Option Tabellen validieren, die den Offizieren im Kontextmenü zur Verfügung steht. Dadurch werden alle DKP-Tische der Spieler (DKP, verdiente und ausgegebene Lebenszeit) basierend auf ihrer Historie neu erstellt. Es wird empfohlen, die gespeicherte Variablendatei vor der Ausführung zu sichern, da sie falsche Werte zurückgeben kann, wenn Sie keine Verlaufseinträge haben. Durch das Zurücksetzen aller vorherigen DKP-Werte für Spieler (Kontextmenü> Alles auswählen> Vorheriges DKP zurücksetzen) können Sie genau sehen, wie stark sich die DKP jedes Spielers durch die Validierung geändert hat.",
+    CHANGELOG1            = "",
+    CHANGELOG2            = "",
+    CHANGELOG3            = "",
+    CHANGELOG4            = "",
+    CHANGELOG5            = "",
+    CHANGELOG6            = "",
+    CHANGELOG7            = "",
+    CHANGELOG8            = "",
     CHANGELOG9            = "",
     CHANGELOG10           = "",
   }

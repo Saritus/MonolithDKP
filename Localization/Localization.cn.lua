@@ -423,7 +423,7 @@ if GetLocale() == "zhCN" then
     MIGRATEINST1 = [=[|cffff0000IMPORTANT!!|r：在继续之前备份您保存的变量文件。 2.0版附带了一个全新的索引广播系统。这需要使用新值来迁移当前表。此迁移是一次性的过程，只能由一名人员执行。选择具有最准确数据的人员进行迁移。所有其他人员将被阻止，并将删除其数据，以接受来自所选人员的新数据广播。这是为了防止重复数据。一旦所有人员都收到了新数据，您就可以从行会负责人公开说明中删除{MonDKP=OFFICER_NAME}标签。至关重要的是，只有一名管理人员执行迁移，否则您将有重复的数据并且您的表将被损坏（解决此问题的唯一方法是让所有损坏了表的人员注销并同时删除其保存的变量文件，否则登录后，您将再次收到损坏的数据）。此外，所有成员都必须使用2.0或更高版本才能兼容。旧版本将无法使用。
 
     可以使用“/dkp migration”重新打开此窗口。]=],
-    MIGRATEINST2 = "％s 已经进行了迁移。请立即备份您保存的变量文件（WTF\\Account\\ACCOUNT_NAME\\SavedVariables\\MonolithDKP.lua），然后单击下面的删除表按钮。如果 ％s 在线，他们将在您重新加载后自动向您推送同步。如果不是，将在他们登录时将其推送，或者您可以请求他们推送同步（这是通过单击主GUI左下角的表格状态按钮来完成的）。如果您的公会的迁移过程中发生任何错误，请从公会负责人的公开说明中删除迁移人员标签，并让到目前为止参与的所有人员删除已损坏的已保存变量文件，并将其还原到已备份的文件中。每个人都必须同时执行此操作，并且在完成此操作之前，请勿登录（启用插件）。拥有迁移表的任何在线用户都将在您登录后自动将数据推送给您。",
+    MIGRATEINST2 = "％s 已经进行了迁移。请立即备份您保存的变量文件（WTF\\Account\\ACCOUNT_NAME\\SavedVariables\\EssentialDKP.lua），然后单击下面的删除表按钮。如果 ％s 在线，他们将在您重新加载后自动向您推送同步。如果不是，将在他们登录时将其推送，或者您可以请求他们推送同步（这是通过单击主GUI左下角的表格状态按钮来完成的）。如果您的公会的迁移过程中发生任何错误，请从公会负责人的公开说明中删除迁移人员标签，并让到目前为止参与的所有人员删除已损坏的已保存变量文件，并将其还原到已备份的文件中。每个人都必须同时执行此操作，并且在完成此操作之前，请勿登录（启用插件）。拥有迁移表的任何在线用户都将在您登录后自动将数据推送给您。",
     MIN = "敏",
     MINBIDDESCRIPTION = [=[通过“最小出价值”，为所有广告位（或单个项目）分配了一个最小值。
 
@@ -439,8 +439,8 @@ if GetLocale() == "zhCN" then
     MINUTE = "分钟",
     MINUTES = "分钟",
     MISCSETTINGS = "杂项设置",
-    MONDKPSCALESIZE = "整体式DKP秤尺寸",
-    MONDKPSCALESIZETTDESC = "Monolith DKP窗口的比例。单击\"保存设置\"以将大小更改为设置值。",
+    MONDKPSCALESIZE = "Essential DKP秤尺寸",
+    MONDKPSCALESIZETTDESC = "Essential DKP窗口的比例。单击\"保存设置\"以将大小更改为设置值。",
     MONDKPSCALESIZETTWARN = "如果使用另一个修改UI比例的插件（例如TukUI，ElvUI等），则保存后可能需要/ reload。",
     MORE = "更多",
     MORESECONDSTO = "还有更多秒可以做到这一点。",
@@ -519,7 +519,7 @@ if GetLocale() == "zhCN" then
 
     您确定要这样做吗]=],
     OUTOFDATE = "过时的",
-    OUTOFDATEANNOUNCE = "您的Monolith DKP版本已过时。请更新Curse / Twitch或WoWInterface，以确保没有兼容性问题。",
+    OUTOFDATEANNOUNCE = "您的Essential DKP版本已过时。请更新Curse / Twitch，以确保没有兼容性问题。",
     PAUSERAID = "暂停突",
     PAUSERAIDTTDESC = "如果领导者决定暂停计时器，则这会暂停突袭计时器",
     PAUSERAIDTTWARN = "可以通过单击“ 继续突袭 ”恢复",
@@ -741,7 +741,7 @@ if GetLocale() == "zhCN" then
     WHITELISTEMPTY = "您的白名单是空的。",
     WHITELISTHEADER = [=[白名单设置|CFF444444（仅领导人）（A)|r
 
-    强烈建议您仅在希望限制哪些警官需要权限的情况下才使用此白名单设置。如果您希望所有人员都具有权限，请完全忽略此设置功能。请谨慎使用。 （如果应用这些设置会导致问题，请使用文本编辑器打开\WTF\Accounts\ACCOUNT_NAME\SavedVariables\MonolithDKP.lua文件，然后删除底部附近的MonDKP_Whitelist表。）]=],
+    强烈建议您仅在希望限制哪些警官需要权限的情况下才使用此白名单设置。如果您希望所有人员都具有权限，请完全忽略此设置功能。请谨慎使用。 （如果应用这些设置会导致问题，请使用文本编辑器打开\WTF\Accounts\ACCOUNT_NAME\SavedVariables\EssentialDKP.lua文件，然后删除底部附近的MonDKP_Whitelist表。）]=],
     WIPETABLES = "擦桌子",
     WIPETABLESCONF = "您确定要删除所有表格吗？ 当某人在线时，您可以从其获取所有信息。",
     WIPETABLESTTDESC = "擦除所有数据，包括DKP表，战利品历史记录和DKP历史记录。 如果尝试同步以从可用人员接收新的和完整的信息时发生问题，请使用此选项。",
@@ -789,14 +789,14 @@ if GetLocale() == "zhCN" then
     VALIDATEWARN          = "这将根据他们的完整历史记录重新计算所有玩家的dkp，获得的生命和花费的生命。 如果由于缺少历史记录而导致结果不正确，请确保备份已保存的变量文件。 在运行之前，您应该为所有播放器重置先前的dkp（上下文菜单>全选>重置先前的dkp），以便可以看到它们已更改了多少。 你想继续吗？",
     PASS                  = "通过",
 
-    CHANGELOG1            = "-改进的广播系统，其界面可通过单击DKP主界面左下角的状态指示器图标来访问。",
-    CHANGELOG2            = "  -完全广播选项将广播所有数据，并用您的相同副本覆盖收件人表。他们拥有的所有您没有拥有的数据都将丢失（与1.6及更早版本中的广播按钮相同）。”",
-    CHANGELOG3            = "  -“合并最近2周”选项将广播最近两周（但不早于安装2.1以防止数据重复的时间）创建的所有条目，并将仅应用收件人没有的条目。对于合并多个团队数据有用。",
-    CHANGELOG4            = "-军官可以使用桌子维修功能。要使用它，请观看“诅咒”页面上链接的视频或转到https://www.youtube.com/watch?v=dwnNnppFF2I。建议只有一名军官在数据最准确的桌子上使用它，然后将修复后的数据完整广播到其他行会或军官，以便传递。事先备份您保存的变量文件。",
-    CHANGELOG5            = "-突袭期间的广播条目仍将保持即时状态，就像在2.0中一样。由于担心会覆盖数据，因此无需等待广播条目。",
-    CHANGELOG6            = "-现在，决定您的表是否过时的种子会在插件中自然传播（不再有GM公共注释）",
-    CHANGELOG7            = "-这种新的数据结构与www.warcraftdkp.com上的当前数据管理不兼容，除非那里的开发人员能够更新逻辑。",
-    CHANGELOG8            = "-上下文菜单中可供人员使用的“验证表”选项。这将根据他们的历史记录重建所有球员的DKP表（dkp，获得和使用的终生）。建议您在运行之前备份保存的变量文件，因为如果缺少任何历史记录条目，该文件可能会返回不正确的值。重置播放器的所有先前DKP值（上下文菜单>全选>重置先前的dkp）将使您确切地看到每个播放器DKP从验证中更改了多少。",
+    CHANGELOG1            = "",
+    CHANGELOG2            = "",
+    CHANGELOG3            = "",
+    CHANGELOG4            = "",
+    CHANGELOG5            = "",
+    CHANGELOG6            = "",
+    CHANGELOG7            = "",
+    CHANGELOG8            = "",
     CHANGELOG9            = "",
     CHANGELOG10           = "",
   }

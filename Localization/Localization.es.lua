@@ -423,7 +423,7 @@ if GetLocale() == "esES" or GetLocale() == "esMX" then
     MIGRATEINST1 = [=[|cffff0000¡IMPORTANTE!|r: Haga una copia de seguridad del archivo de variables guardado antes de continuar. Con 2.0 viene un nuevo sistema de transmisión indexada. Esto requiere que sus tablas actuales se migren con nuevos valores. Esta migración es un proceso único que SOLO puede ser realizado por UN oficial. Seleccione el oficial con los datos más precisos para realizar la migración. Todos los demás oficiales serán bloqueados y se eliminarán sus datos para aceptar una transmisión de los nuevos datos de ese oficial seleccionado. Esto es para evitar datos duplicados. Una vez que TODOS los oficiales hayan recibido los nuevos datos, puede eliminar la etiqueta {MonDKP = OFFICER_NAME} de la nota pública de Guild Leaders. Es crucialmente importante que solo un oficial realice la migración o tendrá datos duplicados y sus tablas se dañarán (la única forma de corregir el problema es hacer que todos los oficiales que tienen tablas corruptas cierren sesión y eliminen sus archivos de variables guardados simultáneamente o de lo contrario simplemente recibirá los datos corruptos nuevamente tan pronto como inicie sesión). Además, todos los miembros deben usar 2.0 o posterior para ser compatibles. Las versiones anteriores NO funcionarán.
 
     Esta ventana se puede volver a abrir con "/dkp migrate".]=],
-    MIGRATEINST2 = "%s ya ha realizado la migración. Realice una copia de seguridad de su archivo de variables guardadas de inmediato (WTF\\Cuenta\\NOMBRE_CUENTA\\GuardadoVariables\\MonolithDKP.lua) y luego haga clic en el botón Eliminar tablas a continuación. Si %s está en línea, automáticamente le enviarán una sincronización después de que haya recargado. De lo contrario, se presionará uno cuando inicien sesión o puede solicitar que empujen una sincronización (esto se hace haciendo clic en el botón de estado de la tabla en la esquina inferior izquierda de la GUI principal). Si se produce algún error en el proceso de migración de su gremio, elimine la etiqueta de los oficiales que migran de la nota pública del líder del gremio y haga que todos los oficiales que hayan participado hasta ahora eliminen su archivo de variables guardadas corrupto y lo restauren en el que se hizo una copia de seguridad. Todos deben hacer esto al mismo tiempo y no iniciar sesión (con el complemento habilitado) hasta que se haya completado. Cualquier persona en línea con tablas migradas le enviará automáticamente esos datos tan pronto como inicie sesión.",
+    MIGRATEINST2 = "%s ya ha realizado la migración. Realice una copia de seguridad de su archivo de variables guardadas de inmediato (WTF\\Cuenta\\NOMBRE_CUENTA\\GuardadoVariables\\EssentialDKP.lua) y luego haga clic en el botón Eliminar tablas a continuación. Si %s está en línea, automáticamente le enviarán una sincronización después de que haya recargado. De lo contrario, se presionará uno cuando inicien sesión o puede solicitar que empujen una sincronización (esto se hace haciendo clic en el botón de estado de la tabla en la esquina inferior izquierda de la GUI principal). Si se produce algún error en el proceso de migración de su gremio, elimine la etiqueta de los oficiales que migran de la nota pública del líder del gremio y haga que todos los oficiales que hayan participado hasta ahora eliminen su archivo de variables guardadas corrupto y lo restauren en el que se hizo una copia de seguridad. Todos deben hacer esto al mismo tiempo y no iniciar sesión (con el complemento habilitado) hasta que se haya completado. Cualquier persona en línea con tablas migradas le enviará automáticamente esos datos tan pronto como inicie sesión.",
     MIN = "Min",
     MINBIDDESCRIPTION = [=[Con los valores mínimos de oferta, a todos los espacios (o artículos individuales) se les asigna un valor mínimo. Cualquier persona que presente una oferta debe ofertar a ese valor o mayor. 
 
@@ -439,8 +439,8 @@ if GetLocale() == "esES" or GetLocale() == "esMX" then
     MINUTE = "minuto",
     MINUTES = "minutos",
     MISCSETTINGS = "Configuraciones varias",
-    MONDKPSCALESIZE = "Monolith DKP Scale Size",
-    MONDKPSCALESIZETTDESC = "Escala de la ventana Monolith DKP. Haga clic en \"Guardar configuración\" para cambiar el tamaño y establecer el valor.",
+    MONDKPSCALESIZE = "Essential DKP Scale Size",
+    MONDKPSCALESIZETTDESC = "Escala de la ventana Essential DKP. Haga clic en \"Guardar configuración\" para cambiar el tamaño y establecer el valor.",
     MONDKPSCALESIZETTWARN = "Puede requerir una / reload después de guardar si se usa otro Addon que modifica las escalas de UI (ej. TukUI, ElvUI, etc.)",
     MORE = "más",
     MORESECONDSTO = "más segundo (s) para hacer eso.",
@@ -519,7 +519,7 @@ if GetLocale() == "esES" or GetLocale() == "esMX" then
 
     ¿Está seguro de que le gustaría hacer esto?]=],
     OUTOFDATE = "fuera de plazo",
-    OUTOFDATEANNOUNCE = "Su versión de Monolith DKP está desactualizada. Actualice Curse / Twitch o WoWInterface para asegurarse de que no haya problemas de compatibilidad.",
+    OUTOFDATEANNOUNCE = "Su versión de Essential DKP está desactualizada. Actualice Curse / Twitch para asegurarse de que no haya problemas de compatibilidad.",
     PAUSERAID = "Pausa Raid",
     PAUSERAIDTTDESC = "Esto detiene un temporizador de incursión si el líder decide que el temporizador debe detenerse por descansos.",
     PAUSERAIDTTWARN = "Se puede reanudar haciendo clic en \"Continuar incursión\".",
@@ -739,7 +739,7 @@ if GetLocale() == "esES" or GetLocale() == "esMX" then
     WHITELISTEMPTY = "Tu lista blanca está vacía.",
     WHITELISTHEADER = [=[Configuración de la lista blanca |CFF444444(Líder solamente) (Alfa)|r
 
-    Se recomienda encarecidamente que solo use esta configuración de la lista blanca si desea restringir qué oficiales requieren permisos. Si desea que todos los oficiales tengan permisos, ignore esta característica de configuración por completo. Usar con precaución. (Si la aplicación de esta configuración causa problemas, abra su archivo \WTF\Cuentas\ACCOUNT_NAME\ SavedVariables\MonolithDKP.lua con un editor de texto y elimine la tabla MonDKP_Whitelist cerca de la parte inferior).]=],
+    Se recomienda encarecidamente que solo use esta configuración de la lista blanca si desea restringir qué oficiales requieren permisos. Si desea que todos los oficiales tengan permisos, ignore esta característica de configuración por completo. Usar con precaución. (Si la aplicación de esta configuración causa problemas, abra su archivo \WTF\Cuentas\ACCOUNT_NAME\ SavedVariables\EssentialDKP.lua con un editor de texto y elimine la tabla MonDKP_Whitelist cerca de la parte inferior).]=],
     WIPETABLES = "Limpiar tablas",
     WIPETABLESCONF = "¿Está seguro de que desea eliminar todas las tablas? Puede recuperar toda la información de un oficial cuando uno está en línea.",
     WIPETABLESTTDESC = "Limpia todos los datos, incluida la tabla DKP, el historial de botín y el historial de DKP. Use esto si se producen problemas al intentar sincronizar para recibir información nueva y completa de un oficial disponible.",
@@ -787,14 +787,14 @@ if GetLocale() == "esES" or GetLocale() == "esMX" then
     VALIDATEWARN          = "Esto volverá a calcular el dkp de todos los jugadores, la vida ganada y la vida gastada en función de su historial completo. Asegúrese de hacer una copia de seguridad del archivo de variables guardado en caso de que el resultado sea incorrecto debido a la falta de entradas en el historial. Debes restablecer dkp anterior (menú contextual> seleccionar todo> restablecer dkp anterior) para todos los jugadores antes de correr para que puedas ver cuánto cambiaron. ¿Te gustaria continuar?",
     PASS                  = "Pasar",
 
-    CHANGELOG1            = "- Sistema de transmisión mejorado con interfaz accesible haciendo clic en el icono del indicador de estado en la esquina inferior izquierda de la interfaz principal de DKP.",
-    CHANGELOG2            = "  - La opción de transmisión completa transmitirá todos los datos y sobrescribirá las tablas de destinatarios con copias idénticas de las suyas. Se perderán todos los datos que tenían que no tenía (Funciona igual que el botón de transmisión en 1.6 y anteriores).",
-    CHANGELOG3            = "  - La opción Fusionar las últimas 2 semanas transmitirá las entradas creadas en las últimas dos semanas (pero no antes de cuando se instaló 2.1 para evitar la posibilidad de duplicación de datos) y solo aplicará las entradas que los destinatarios no tengan. Útil para fusionar datos de múltiples grupos de incursiones.",
-    CHANGELOG4            = "- Función de reparación de mesa disponible para oficiales. Para usarlo, vea el video vinculado en la página de Maldición o vaya a https://www.youtube.com/watch?v=dwnNnppFF2I. Se recomienda que solo un oficial lo use en las tablas con los datos más precisos y luego haga una transmisión completa de los datos reparados al resto del gremio o los oficiales para que lo transmitan. Haga una copia de seguridad de sus archivos de variables guardados antes.",
-    CHANGELOG5            = "- Las entradas de transmisión durante la redada seguirán siendo instantáneas como en 2.0. No hay que esperar a que las entradas se transmitan por temor a sobrescribir los datos.",
-    CHANGELOG6            = "- La semilla que determina si sus tablas están desactualizadas ahora se propagan naturalmente dentro del complemento (no más notas públicas de GM)",
-    CHANGELOG7            = "- Esta nueva estructura de datos no es compatible con la gestión de datos actual en www.warcraftdkp.com hasta que el desarrollador pueda actualizar la lógica.",
-    CHANGELOG8            = "- Validar las opciones de tablas disponibles para los oficiales en el menú contextual. Esto reconstruirá todas las tablas DKP de los jugadores (dkp, vida ganada y gastada) en función de su historial. Le recomendamos que haga una copia de seguridad del archivo de variables guardado antes de ejecutarlo, ya que puede devolver valores incorrectos si falta alguna entrada del historial. Restablecer todos los valores DKP anteriores para los jugadores (menú contextual> seleccionar todo> restablecer dkp anterior) le permitirá ver exactamente cuánto cambió cada DKP de los jugadores desde la validación.",
+    CHANGELOG1            = "",
+    CHANGELOG2            = "",
+    CHANGELOG3            = "",
+    CHANGELOG4            = "",
+    CHANGELOG5            = "",
+    CHANGELOG6            = "",
+    CHANGELOG7            = "",
+    CHANGELOG8            = "",
     CHANGELOG9            = "",
     CHANGELOG10           = "",
   }
