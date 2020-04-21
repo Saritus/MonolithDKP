@@ -325,7 +325,7 @@ function MonDKP:FormatTime(time)
 	return str;
 end
 
-function MonDKP:Print(...)        --print function to add "EsentialDKP:" to the beginning of print() outputs.
+function MonDKP:Print(...)        --print function to add "MonolithDKP:" to the beginning of print() outputs.
 	if not MonDKP_DB.defaults.supressNotifications then
 		local defaults = MonDKP:GetThemeColor();
 		local prefix = string.format("|cff%s%s|r|cff%s", defaults[1].hex:upper(), "MonolithDKP:", defaults[2].hex:upper());
