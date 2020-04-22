@@ -16,7 +16,7 @@ local tc_colors = {
 	["Mage"] = { r = 0.25, g = 0.78, b = 0.92, hex = "40C7EB" },
 	["Priest"] = { r = 1, g = 1, b = 1, hex = "FFFFFF" },
 	["Rogue"] = { r = 1, g = 0.96, b = 0.41, hex = "FFF569" },
-	["Shaman"] = { r = 0.96, g = 0.55, b = 0.73, hex = "F58CBA" },
+	["Shaman"] = { r = 0.01, g = 0.44, b = 0.87, hex = "0270DD" },
 	["Paladin"] = { r = 0.96, g = 0.55, b = 0.73, hex = "F58CBA" },
 	["Warlock"] = { r = 0.53, g = 0.53, b = 0.93, hex = "8787ED" },
 	["Warrior"] = { r = 0.78, g = 0.61, b = 0.43, hex = "C79C6E" }
@@ -46,8 +46,8 @@ end
 -- Addon Defaults
 --------------------------------------
 local defaults = {
-	theme = { r = 0.6823, g = 0.6823, b = 0.8666, hex = "aeaedd" },
-	theme2 = { r = 1, g = 0.37, b = 0.37, hex = "ff6060" }
+	theme = { r = 0.4, g = 0.8, b = 0.4, hex = "65c6ba" },
+	theme2 = { r = 0.8, g = 0.8, b = 0.8, hex = "9bb5bd" }
 }
 
 core.WorkingTable = {};       -- table of all entries from MonDKP_DKPTable that are currently visible in the window. From MonDKP_DKPTable
@@ -88,7 +88,7 @@ core.EncounterList = {      -- Event IDs must be in the exact same order as core
 }
 
 core.MonDKPUI = {}        -- global storing entire Configuration UI to hide/show UI
-core.MonVersion = "v2.1.2";
+core.MonVersion = "v2.2.0";
 core.BuildNumber = 20102;
 core.TableWidth, core.TableRowHeight, core.TableNumRows = 500, 18, 27; -- width, row height, number of rows
 core.SelectedData = { player="none"};         -- stores data of clicked row for manipulation.
