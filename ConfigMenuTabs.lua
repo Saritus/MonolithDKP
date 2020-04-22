@@ -314,4 +314,3 @@ function MonDKP:ConfigMenuTabs()
 	DKPHistoryFilterBox_Create()
 
 end
-	
